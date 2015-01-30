@@ -1,9 +1,12 @@
 #!/usr/bin/python
+# David Kohreidze
+# sail.py
+
 import os
 import re
 
 links = {	#keywords	#URLs
-		'auto link' :  'https://github.com/dkohreidze/SEO',
+		'auto link' :  'https://github.com/dkohreidze/seo-auto-internal-links',
 		'Google'    :  'https://www.google.com'
 	}
 
