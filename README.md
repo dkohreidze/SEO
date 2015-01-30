@@ -1,9 +1,17 @@
-# SEO
+# seo automatic internal links script
 
-`auto_link.py`
+##`sail.py`
 
-This Python script automates linking by searching for keywords within a text file and replaces the first instance of the keyword with an anchor text link to a specified URL. This script is pretty basic and only links exact matches - plurals, derivatives, and misspellings will not be linked. 
+This Python script inserts HTML anchor text links within a text file on your local machine.
 
-You must place keyword/URL pairs in the format of the examples provided in the script. You can add as many keyords/URL pairs as you like and keyword phrases are accepted.
+The script reads all .txt files in it's directory and inserts anchor text links around the first instance of your keyword to its corresponding URL.
 
-To run this script, place the text files you want to crawl in the same directory as the script file. Open Terminal and `cd` into the directory where the script and text files are located. Exectute the script with `python auto_link.py`
+All keyword/URL pairs must be placed into the script in the format provided. You may add any number of keyword/URL pairs.
+
+Currently the script is pretty basic - only exact keyword matches will be linked and you have to emuerate every keyword/URL pair into the code of the script. I plan to update it to be more versatile: accept additional data files (CSV, XML, etc.) and provide link customization options (target & nofollow attributes). If you have any feature requests, please file an issue in github.
+
+
+To run this script: 
+* Place the .txt files you want to crawl in the same directory as the script file. (I recommend placing everything in a new folder, as this script will edit all text files within the current directory)
+* On Mac, open Terminal and `cd` into your working directory 
+* Exectute the script with the command `python sail.py`
