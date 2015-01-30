@@ -4,7 +4,7 @@ import re
 
 links = {	#keywords	#URLs
 		'auto link' :  'https://github.com/dkohreidze/SEO',
-		'Google':  'https://www.google.com'
+		'Google'    :  'https://www.google.com'
 	}
 
 for fn in os.listdir('.'):
