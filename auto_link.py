@@ -3,9 +3,9 @@
 import os
 import re
 
-links = {	 #keywords			#URLs
-			'auto link' 	:	'https://github.com/dkohreidze/SEO'		,
-			'Google'		:	'https://www.google.com'	
+links = {	#keywords		#URLs
+			'auto link' :	'https://github.com/dkohreidze/SEO'	,
+			'Google'	:	'https://www.google.com'	
 		}
 
 #list files in dir
