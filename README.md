@@ -1,7 +1,5 @@
 # seo automatic internal links script
 
-####`sail.py`
-
 This Python script inserts HTML anchor text links within a text file on your local machine.
 
 The script reads all .txt files in it's directory and inserts anchor text links around the first instance of your keyword to its corresponding URL.
