@@ -1,13 +1,13 @@
 #!/usr/bin/python
 # David Kohreidze
 
-import os
+import csv
+import os 
 import re
 
-links = {	#keywords	#URLs
-		'auto link' :  'https://github.com/dkohreidze/seo-auto-internal-links',
-		'Google'    :  'https://www.google.com' # case sensitive Google
-	}
+with open('keywords.csv', 'rU') as csvf:
+	reader = csv.reader(csvf)
+	links = {rows[0]:rows[1] for rows in reader}
 
 for f in os.listdir('.'): # for every file in the current directory
   if os.path.isfile(f): # must be a file
