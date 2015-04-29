@@ -7,7 +7,7 @@ import re
 
 with open('keywords.csv', 'rU') as csvf:
 	reader = csv.reader(csvf)
-	links = {rows[0]:rows[1] for rows in reader}
+	links = {rows[0]:rows[1] for rows in reader} # builds dictionary from file
 
 for f in os.listdir('.'): # for every file in the current directory
   if os.path.isfile(f): # must be a file
