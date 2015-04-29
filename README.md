@@ -1,13 +1,12 @@
 # seo automatic internal links script
 
-This Python script inserts HTML anchor text links within a text file on your local machine.
+A super simple Python script that creates HTML links around your keywords for all text files in the working directory.
 
-The script reads all .txt files in it's directory and inserts anchor text links around the first instance of your keyword to its corresponding URL.
+The script goes through all .txt files in its directory and inserts an `<a>` tag around the first instance of your keyword to its corresponding URL. Only exact keyword matches (case sensitive) will be linked. 
 
-All keyword/URL pairs must be placed into the script in the format provided. You may add any number of keyword/URL pairs.
+Use a CSV file named keywords.csv to hold your keyword, URL pairs.
 
-Currently the script is pretty basic - only exact keyword matches will be linked and you have to emuerate every keyword/URL pair into the code of the script. I plan to update it to be more versatile: accept additional data files (CSV, XML, etc.) and provide link customization options (target & nofollow attributes). If you have any feature requests, please file an issue in github.
-
+Bugs or feature requests? Please file an issue.
 
 To run this script: 
 * Place the .txt files you want to crawl in the same directory as the script file. (I recommend placing everything in a new folder, as this script will edit all text files within the current directory)
